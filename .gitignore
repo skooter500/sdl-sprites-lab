@@ -27,3 +27,6 @@ ipch
 *.idb
 *.lastbuildstate
 *.cache
+*.log
+*.unsuccessfulbuild
+Debug
