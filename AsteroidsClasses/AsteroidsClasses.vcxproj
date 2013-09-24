@@ -37,8 +37,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(IncludePath);C:\Users\Bryan\Desktop\glm;C:\Users\Bryan\Documents\Courses\Game Engines\2013\BGE\Dependancies\SDL2-2.0.0\include</IncludePath>
-    <LibraryPath>C:\Users\Bryan\Documents\Courses\Game Engines\2013\BGE\Dependancies\SDL2-2.0.0\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath);</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -48,7 +48,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
-      <AdditionalDependencies>SDL2main.lib;%(AdditionalDependencies);SDL2.lib;</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies);</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
