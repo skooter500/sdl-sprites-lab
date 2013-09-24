@@ -9,6 +9,7 @@ GameComponent::GameComponent(void)
 	look = glm::vec2(0.0f, 1.0f);
 	rotation = 0.0f;
 	speed = 0.0f;
+	alive = true;
 }
 
 

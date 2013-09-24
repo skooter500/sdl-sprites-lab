@@ -12,6 +12,7 @@ namespace Game1
 		glm::vec2 look;
 		float rotation;
 		float speed;
+		bool alive;
 
 		virtual bool Initialise();
 		virtual void Update(float timeDelta);

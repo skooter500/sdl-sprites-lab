@@ -67,7 +67,14 @@ void Game::Update(float timeDelta)
 	while (it != children.end())
 	{
 		(*it)->Update(timeDelta);
-		++ it;
+		if ((*it)->alive == false)
+		{
+			it = children.erase(it);
+		}
+		else
+		{
+			++ it;
+		}		
 	}
 }
 
