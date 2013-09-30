@@ -50,7 +50,7 @@ void Player::Update(float timeDelta)
 
 	if (keyState[SDL_SCANCODE_UP])
 	{
-		position += look * speed * timeDelta; 
+		position += (look * speed) * timeDelta; 
 	}
 
 	if (keyState[SDL_SCANCODE_DOWN])
