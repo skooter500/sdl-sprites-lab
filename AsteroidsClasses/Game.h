@@ -2,6 +2,7 @@
 #include "GameComponent.h"
 #include <list>
 #include <SDL.h>
+#include <memory>
 #include "AITank.h"
 
 using namespace std;
