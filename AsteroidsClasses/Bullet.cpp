@@ -23,6 +23,15 @@ void Bullet::Update(float timeDelta)
 	{
 		alive = false;
 	}
+
+	// Check distance to the AI tank
+	glm::vec2 tankPos = Game::Instance()->aiTank->position + glm::vec2(Game::Instance()->aiTank->center.x , Game::Instance()->aiTank->center.y);
+	float dist = glm::length(position - tankPos);
+	if (dist < 20)
+	{
+		cout << "Hit the AI Tank!!" << endl;
+		alive = false;
+	}
 }
 
 bool Bullet::Initialise()

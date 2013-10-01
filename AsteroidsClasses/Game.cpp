@@ -53,6 +53,9 @@ bool Game::Initialise()
 	shared_ptr<Player> player = make_shared<Player>();
 	children.push_back(player);
 
+	aiTank = make_shared<AITank>();
+	children.push_back(aiTank);
+
 	list<shared_ptr<GameComponent>>::iterator it = children.begin();
 	while (it != children.end())
 	{

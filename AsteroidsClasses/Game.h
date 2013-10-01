@@ -2,6 +2,7 @@
 #include "GameComponent.h"
 #include <list>
 #include <SDL.h>
+#include "AITank.h"
 
 using namespace std;
 
@@ -21,6 +22,7 @@ namespace Game1
 		// SDL Stuff
 		SDL_Renderer * renderer;
 		bool running;
+		shared_ptr<AITank> aiTank;
 
 		bool Initialise();
 		bool InitialiseSDL();
