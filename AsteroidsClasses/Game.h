@@ -1,6 +1,7 @@
 #pragma once
 #include "GameComponent.h"
 #include <list>
+#include<memory>
 #include <SDL.h>
 
 using namespace std;
